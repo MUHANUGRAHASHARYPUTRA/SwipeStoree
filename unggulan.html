@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo">Swipe Store</div>
+        <button class="hamburger" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+            <a href="index.html">Beranda</a>
+            
+        </nav>
+        <div class="nav-actions">
+            <div class="demo-money premium-balance desktop-balance-display">
+                Saldo: <span id="demo-balance">Rp 23.000.000</span>
+            </div>
+            <button id="cart-button" class="premium-button nav-button">
+                <span class="icon">🛒</span> Keranjang (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <div class="demo-money premium-balance mobile-balance-display">
+        Saldo: <span id="demo-balance-mobile">Rp 23.000.000</span>
+    </div>
+
+    
+    <!-- ===================================================
+===== Produk Unggulan Slider Section =====
+=================================================== -->
+<section id="produk-menarik" class="produk-unggulan-section">
+    <h2 class="section-title animate-on-scroll">Geser Keunggulan Produk Kami 👇🏻</h2>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider-images">
+                <div class="slide"><img src="img/slider1.jpg" alt="Produk Unggulan 1"></div>
+                <div class="slide"><img src="img/slider2.jpg" alt="Produk Unggulan 2"></div>
+                <div class="slide"><img src="img/slider3.jpg" alt="Produk Unggulan 3"></div>
+                <div class="slide"><img src="img/slider4.jpg" alt="Produk Unggulan 4"></div>
+                <div class="slide"><img src="img/slider5.jpg" alt="Produk Unggulan 5"></div>
+            </div>
+            <button class="slider-nav prev" aria-label="Previous slide">‹</button>
+            <button class="slider-nav next" aria-label="Next slide">›</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </div>
+</section>
+    
+
+    <section id="apple-showcase-section" class="apple-showcase-section">
+        <h2 class="section-title animate-on-scroll">Keunggulan dari iPad Air 13</h2>
+
+        <!-- PRODUK 1 -->
+        <div class="apple-product" data-apple-id="A001" data-base-price="11499000">
+            <h1 class="apple-title">Layar Liquid Retina XDR yang jernih dan
+                responsif menampilkan detail hidup</h1>
+            <p class="apple-subtitle">iPad Air 13 hadir dengan layar Liquid Retina XDR beresolusi tinggi yang menampilkan warna lebih akurat, kontras tajam, dan tingkat kecerahan optimal untuk bekerja di luar maupun di dalam ruangan. Teknologi refresh rate adaptif membuat navigasi terasa lebih halus, sementara sensitivitas sentuhnya mendukung berbagai aplikasi profesional. Desainnya dibuat dengan profil ultra-tipis, bobot ringan, dan rangka aluminium presisi menghasilkan perangkat yang kokoh namun tetap nyaman digunakan dalam waktu lama. Kombinasi ini memberikan pengalaman visual yang imersif sekaligus kenyamanan tinggi bagi pengguna.</p>
+
+            
+
+            <img src="img/apple1.png" class="apple-img">
+        </div>
+
+        <!-- PRODUK 2 -->
+        <div class="apple-product" data-apple-id="A002" data-base-price="11499000">
+            <h1 class="apple-title"> Desain tipis dan presisi dengan empat warna premium </h1>
+            <p class="apple-subtitle">Mengusung desain presisi dengan empat pilihan warna premium, iPad Air 13 memadukan identitas visual yang modern dengan material aluminium daur ulang berkualitas tinggi. Struktur rangkanya dirancang untuk ketahanan jangka panjang, tahan terhadap tekanan, goresan ringan, dan pemakaian harian. Finishing matte yang elegan memberikan sentuhan estetik yang bersih, serta meningkatkan kenyamanan genggam tanpa licin. Setiap elemen desainnya
+            </p>
+
+            
+
+            <img src="img/apple2.png" class="apple-img small">
+        </div>
+
+        <!-- PRODUK 3 -->
+        <div class="apple-product" data-apple-id="A003" data-base-price="11499000">
+            <h1 class="apple-title">  Compatible dengan Magic Keyboard</h1>
+            <p class="apple-subtitle">Dipadukan dengan Magic Keyboard, iPad menjadi perangkat kerja yang lebih lengkap. Keyboard ini memiliki key-travel yang nyaman, stabilitas mengetik yang mirip laptop, serta trackpad presisi tinggi yang mendukung gestur multi-sentuh. Produktivitas iPad meningkat melalui kombinasi iPadOS, kemampuan multitasking, dan kompatibilitas dengan aplikasi profesional. Perangkat tetap ringkas dan mudah dibawa, memberikan fleksibilitas kerja maksimal. 
+
+            </p>
+
+            
+
+            <img src="img/apple3.png" class="apple-img">
+        </div>
+
+        <div class="apple-product" data-apple-id="A004" data-base-price="11499000">
+            <h1 class="apple-title"> Dengan Apple Pencil, setiap goresan akurat dan langsung hidup di layar</h1>
+            <p class="apple-subtitle">iPad Air 13 mendukung Apple Pencil Pro yang dirancang untuk menghasilkan presisi tingkat tinggi dalam setiap goresan. Sensitivitas tekanan dan kemiringannya memungkinkan kontrol garis yang natural, sementara latensi sangat rendah menciptakan pengalaman menulis dan menggambar yang terasa seperti di atas kertas. Teknologi pelacakan sentuh yang ditingkatkan membuat respons visual muncul seketika, mendukung aplikasi ilustrasi, desain arsitektur, catatan digital, hingga pengeditan foto. iPad ini menjadi alat kreatif ideal untuk seniman digital, desainer, dan pelajar seni yang menginginkan presisi profesional di perangkat portabel.
+
+            </p>
+
+            
+
+            <img src="img/apple4.png" class="apple-img">
+        </div>
+
+        <div class="apple-product" data-apple-id="A005" data-base-price="11499000">
+            <h1 class="apple-title">Belajar, mencatat, dan menyimpan momen dalam satu perangkat yang ringan, tangguh, dan cerdas</h1>
+            <p class="apple-subtitle">iPad ini dirancang untuk kebutuhan edukasi dan mobilitas. Keunggulan ini memadukan keringanan, performa, dan kecerdasan sistem dalam satu perangkat. Pengguna dapat mencatat dengan Pencil, membuat tugas, membaca, membuat presentasi, dan menyimpan berbagai file dalam satu ekosistem yang rapi. Dengan daya tahan baterai panjang, iPad Air 13 menjadi teman belajar yang efisien, praktis, dan inspiratif bagi penggunanya.
+            </p>
+
+            
+
+            <img src="img/apple5.png" class="apple-img">
+
+            <div style="text-align: center; margin-top: 20px;">
+                
+            </div>
+    </section>
+
+    <!-- ===================================================
+===== Custom Product Selection Section =====
+=================================================== -->
+    <section id="custom-product-section" class="custom-product-section">
+        <h2 class="section-title animate-on-scroll">Checkout iPad</h2>
+        <div class="custom-product-container">
+            <div class="custom-product-card" data-product-id="C001" data-base-price="11499000">
+                <div class="custom-product-image">
+                    <img src="img/apple1.png" alt="Custom iPad Pro">
+                </div>
+                <div class="custom-product-info">
+                    <h3>iPad Air 13</h3>
+                    <p>iPad Air 13 bertenaga super berkat chip Apple M3 yang sangat cepat. Dilengkapi layar Liquid Retina yang mengagumkan, kamera depan 12MP Center Stage untuk panggilan video yang lebih baik, serta Wi-Fi 6E dan 5G super cepat. Dan juga berfungsi dengan Apple Pencil Pro, Magic Keyboard, dan Smart Folio, sehingga Anda bisa multitasking, belajar, bekerja, bermain, dan berkarya dari mana saja.</p>
+
+                    <!-- Color Selection -->
+                    <div class="custom-selection-group">
+                        <h4>Warna - <span id="custom-selected-color-C001">Space Gray</span></h4>
+                        <div class="custom-color-options" data-product-id="C001">
+                            <div class="custom-color-circle selected" data-color="Space Gray" style="background-color: #6d6c6e;"></div>
+                            <div class="custom-color-circle" data-color="Silver" style="background-color: #f5f5f0;"></div>
+                            <div class="custom-color-circle" data-color="Gold" style="background-color: #f9e79f;"></div>
+                            <div class="custom-color-circle" data-color="Blue" style="background-color: #a4c9e4;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Capacity Selection -->
+                    <div class="custom-selection-group">
+                        <h4>Kapasitas - <span id="custom-selected-capacity-C001">128 GB</span></h4>
+                        <div class="custom-capacity-options" data-product-id="C001">
+                            <div class="custom-capacity-box selected" data-capacity="128 GB">128 GB</div>
+                            <div class="custom-capacity-box" data-capacity="256 GB">256 GB</div>
+                        </div>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="custom-price-display">
+                        <p class="custom-price" id="custom-price-display-C001">Harga: Rp15.000.000</p>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button class="custom-add-to-cart-btn" data-product-id="C001">
+                        <span class="icon">🛒</span> Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================
+===== Custom Product Selection Section END =====
+=================================================== -->
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="back-button" title="Kembali ke Daftar Minat">←</a>
+            <a href="form2.html" class="next-page-link">Self Report</a>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Keranjang Belanja Anda</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items-list">
+            </div>
+            <div class="cart-summary">
+                <p>Total Belanja:</p>
+                <p class="total-price" id="cart-total">Rp 0</p>
+            </div>
+            <button id="checkout-button" class="premium-checkout-button">Checkout</button>
+            
+        </div>
+    </div>
+
+    <div id="product-detail-modal" class="product-detail-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="product-detail-title"></h2>
+            <div id="product-detail-gallery" class="image-gallery-container">
+                <div class="image-gallery" id="product-detail-images">
+                </div>
+                <button class="slider-nav prev"><</button>
+                <button class="slider-nav next">></button>
+            </div>
+            <p id="product-detail-description"></p>
+            <p id="product-detail-price"></p>
+            <button id="add-to-cart-detail" class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div id="apple-quantity-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Pilih Jumlah</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="quantity-selector">
+                <h3 id="apple-product-name"></h3>
+                <p id="apple-product-price"></p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-qty">-</button>
+                    <span class="quantity-display" id="apple-quantity">1</span>
+                    <button class="quantity-btn" id="increase-qty">+</button>
+                </div>
+                <button id="confirm-apple-add" class="premium-checkout-button">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="price.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

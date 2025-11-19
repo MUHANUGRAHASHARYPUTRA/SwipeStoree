@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo">Swipe Store</div>
+        <button class="hamburger" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+            <a href="index.html">Beranda</a>
+            
+        </nav>
+        <div class="nav-actions">
+            <div class="demo-money premium-balance desktop-balance-display">
+                Saldo: <span id="demo-balance">Rp 23.000.000</span>
+            </div>
+            <button id="cart-button" class="premium-button nav-button">
+                <span class="icon">🛒</span> Keranjang (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <div class="demo-money premium-balance mobile-balance-display">
+        Saldo: <span id="demo-balance-mobile">Rp 23.000.000</span>
+    </div>
+
+    
+    <!-- ===================================================
+===== Produk Unggulan Slider Section =====
+=================================================== -->
+
+    
+
+    <section id="apple-showcase-section" class="apple-showcase-section">
+        <h2 class="section-title animate-on-scroll">Keunggulan dari iPad Air 13</h2>
+
+        <!-- PRODUK 1 -->
+        <div class="apple-product" data-apple-id="A001" data-base-price="11499000">
+            <h1 class="apple-title">Ipad baru dengan layar besar</h1>
+            <p class="apple-subtitle">Posisi yang tegak, dengan bingkai perangkat yang tampak jelas sebagaimana diperlihatkan pada ilustrasi.</p>
+
+            
+
+            <img src="img/apple1.png" class="apple-img">
+        </div>
+
+        <!-- PRODUK 2 -->
+        <div class="apple-product" data-apple-id="A002" data-base-price="11499000">
+            <h1 class="apple-title"> iPad tersedia dalam beberapa warna</h1>
+            <p class="apple-subtitle">Memperlihatkan tampilan luar perangkat dari sudut yang tampak pada ilustrasi tersebut.
+            </p>
+
+            
+
+            <img src="img/apple2.png" class="apple-img small">
+        </div>
+
+        <!-- PRODUK 3 -->
+        <div class="apple-product" data-apple-id="A003" data-base-price="11499000">
+            <h1 class="apple-title"> iPad dapat dipasangkan dengan keyboard sebagai aksesori tambahan</h1>
+            <p class="apple-subtitle">Mendukung kenyamanan mengetik, tanpa mengalihkan fokus dari fungsi utama iPad.
+            </p>
+
+            
+
+            <img src="img/apple3.png" class="apple-img">
+        </div>
+
+        <div class="apple-product" data-apple-id="A004" data-base-price="11499000">
+            <h1 class="apple-title">iPad dapat digunakan bersama Pencil</h1>
+            <p class="apple-subtitle">Menghasilkan garis dan gambar secara presisi pada layar, serta memperlihatkan interaksi langsung saat Pencil digerakkan di atas permukaan iPad.
+            </p>
+
+            
+
+            <img src="img/apple4.png" class="apple-img">
+        </div>
+
+        <div class="apple-product" data-apple-id="A005" data-base-price="11499000">
+            <h1 class="apple-title">Cocok untuk belajar dan menulis catatan dengan tampilan yang disediakan pada perangkat anda</h1>
+            <p class="apple-subtitle">Memberikan pilihan penggunaan yang tersedia sesuai kebutuhan dasar
+            </p>
+
+            
+
+            <img src="img/apple5.png" class="apple-img">
+
+            <div style="text-align: center; margin-top: 20px;">
+                
+            </div>
+    </section>
+
+    <!-- ===================================================
+===== Custom Product Selection Section =====
+=================================================== -->
+    <section id="custom-product-section" class="custom-product-section">
+        <h2 class="section-title animate-on-scroll">Checkout iPad</h2>
+        <div class="custom-product-container">
+            <div class="custom-product-card" data-product-id="C001" data-base-price="11499000">
+                <div class="custom-product-image">
+                    <img src="img/apple1.png" alt="Custom iPad Pro">
+                </div>
+                <div class="custom-product-info">
+                    <h3>iPad Air 13</h3>
+                    
+                    <!-- Color Selection -->
+                    <div class="custom-selection-group">
+                        <h4>Warna - <span id="custom-selected-color-C001">Space Gray</span></h4>
+                        <div class="custom-color-options" data-product-id="C001">
+                            <div class="custom-color-circle selected" data-color="Space Gray" style="background-color: #6d6c6e;"></div>
+                            <div class="custom-color-circle" data-color="Silver" style="background-color: #f5f5f0;"></div>
+                            <div class="custom-color-circle" data-color="Gold" style="background-color: #f9e79f;"></div>
+                            <div class="custom-color-circle" data-color="Blue" style="background-color: #a4c9e4;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Capacity Selection -->
+                    <div class="custom-selection-group">
+                        <h4>Kapasitas - <span id="custom-selected-capacity-C001">128 GB</span></h4>
+                        <div class="custom-capacity-options"> 
+                            <div class="custom-capacity-box selected" data-capacity="128 GB">128 GB</div>
+                            <div class="custom-capacity-box" data-capacity="256 GB">256 GB</div>
+                        </div>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="custom-price-display">
+                        <p class="custom-price" id="custom-price-display-C001">Harga: Rp15.000.000</p>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button class="custom-add-to-cart-btn" data-product-id="C001">
+                        <span class="icon">🛒</span> Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================
+===== Custom Product Selection Section END =====
+=================================================== -->
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="back-button" title="Kembali ke Daftar Minat">←</a>
+            <a href="form.html" class="next-page-link">Self Report</a>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Keranjang Belanja Anda</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items-list">
+            </div>
+            <div class="cart-summary">
+                <p>Total Belanja:</p>
+                <p class="total-price" id="cart-total">Rp 0</p>
+            </div>
+            <button id="checkout-button" class="premium-checkout-button">Checkout</button>
+            
+        </div>
+    </div>
+
+    <div id="product-detail-modal" class="product-detail-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="product-detail-title"></h2>
+            <div id="product-detail-gallery" class="image-gallery-container">
+                <div class="image-gallery" id="product-detail-images">
+                </div>
+                <button class="slider-nav prev"><</button>
+                <button class="slider-nav next">></button>
+            </div>
+            <p id="product-detail-description"></p>
+            <p id="product-detail-price"></p>
+            <button id="add-to-cart-detail" class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div id="apple-quantity-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Pilih Jumlah</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="quantity-selector">
+                <h3 id="apple-product-name"></h3>
+                <p id="apple-product-price"></p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-qty">-</button>
+                    <span class="quantity-display" id="apple-quantity">1</span>
+                    <button class="quantity-btn" id="increase-qty">+</button>
+                </div>
+                <button id="confirm-apple-add" class="premium-checkout-button">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="price.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

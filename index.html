@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="logo">Swipe Store</div>
+        <button class="hamburger" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+            <a href="index.html">Beranda</a>
+            
+            
+        </nav>
+        <div class="nav-actions">
+            <div class="demo-money premium-balance desktop-balance-display">
+                Saldo: <span id="demo-balance">Rp 23.000.000</span>
+            </div>
+            <button id="cart-button" class="premium-button nav-button">
+                <span class="icon">🛒</span> Keranjang (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <div class="demo-money premium-balance mobile-balance-display">
+        Saldo: <span id="demo-balance-mobile">Rp 23.000.000</span>
+    </div>
+
+    <section id="new-header" class="new-header-section">
+        <div class="new-header-content">
+            
+        </div>
+    </section>
+
+    
+   
+    
+    <section id="home" class="hero-section premium-hero">
+        <div class="hero-content">
+            <h1 class="animate-hero">Desain yang Menyentuh, Kualitas yang Abadi.</h1>
+            <p class="animate-hero delay-1">Rasakan pengalaman produk yang dikurasi dengan perhatian terhadap detail dan kesempurnaan minimalis.</p>
+            <div class="hero-cta-group animate-hero delay-2">
+                
+                <div class="hero-cta-group animate-hero delay-2">
+                    <a href="unggulan.html" class="cta-button primary-cta">Unggulan (1)</a>
+                    
+                    <a href="unggulan2.html" class="cta-button secondary-cta">Unggulan (2)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================
+===== Produk Unggulan Slider Section =====
+=================================================== -->
+    
+
+    <!-- ===================================================
+===== Apple Style Section START =====
+=================================================== -->
+    
+
+    <!-- ===================================================
+===== Apple Style Section END =====
+=================================================== -->
+
+    <!-- ===================================================
+===== Custom Product Selection Section =====
+=================================================== -->
+   
+
+    <!-- ===================================================
+===== Custom Product Selection Section END =====
+=================================================== -->
+
+   
+
+    <div id="cart-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Keranjang Belanja Anda</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items-list">
+            </div>
+            <div class="cart-summary">
+                <p>Total Belanja:</p>
+                <p class="total-price" id="cart-total">Rp 0</p>
+            </div>
+            
+            <button id="checkout-button" class="premium-checkout-button">Checkout</button>
+            
+        </div>
+    </div>
+
+    <div id="product-detail-modal" class="product-detail-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="product-detail-title"></h2>
+            <div id="product-detail-gallery" class="image-gallery-container">
+                <div class="image-gallery" id="product-detail-images">
+                </div>
+                <button class="slider-nav prev"></button>
+                <button class="slider-nav next">></button>
+            </div>
+            <p id="product-detail-description"></p>
+            <p id="product-detail-price"></p>
+            <p class="apple-price">Mulai dari Rp11.4999.000</p>
+            <button id="add-to-cart-detail" class="add-to-cart">Checkout</button>
+        </div>
+    </div>
+
+    <div id="apple-quantity-modal" class="modal premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><span class="icon">🛒</span> Pilih Jumlah</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="quantity-selector">
+                <h3 id="apple-product-name"></h3>
+                <p id="apple-product-price"></p>
+                <div class="quantity-controls">
+                    <button class="quantity-btn" id="decrease-qty">-</button>
+                    <span class="quantity-display" id="apple-quantity">1</span>
+                    <button class="quantity-btn" id="increase-qty">+</button>
+                </div>
+                <button id="confirm-apple-add" class="premium-checkout-button">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="price.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
