@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     // ------------------------------------------------------
     let cart = [];
     let checkoutHistory = [];
-    let demoBalance = 23000000;
+    let demoBalance = 27000000;
     let productSelections = {}; // Store color and capacity selections per product
     let customProductSelections = {}; // Store custom product selections (color, ram, capacity)
 
